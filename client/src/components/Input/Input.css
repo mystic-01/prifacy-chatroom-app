@@ -1,0 +1,36 @@
+.form {
+    display: flex;
+    border-top: 1px solid #D3D3D3;
+  }
+  
+  .input {
+    border: none;
+    padding: 1.7rem;
+    width: 90%;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+  }
+  
+  input:focus, textarea:focus, select:focus{
+    outline: none;
+    caret-color: #0772ac;
+  }
+  
+  .sendButton {
+    background: rgba(53, 133, 177, 0.97);
+    display: inline-block;
+    border: none;
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px;
+    padding: 7px 17px;
+    cursor: pointer;
+    width: 20%;
+  }
+  
+  .sendButton:hover {
+    background: #0772ac;
+  }
+
+  .img-send-button {
+    width: 2.7rem; 
+  }
