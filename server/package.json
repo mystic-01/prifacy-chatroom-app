@@ -4,7 +4,7 @@
   "description": "A react based real time chat application with nodeJS in the backend.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "You know who",
