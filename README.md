@@ -1,1 +1,1 @@
-# prifacy-chatrrom-app
+# prifacy-chatroom-app
