@@ -18,7 +18,7 @@ const Chat = ({ location }) => {
     const [messages, setMessages] = useState([]);
     const [users, setUsers] = useState([]);
 
-    const ENDPOINT = "http://localhost:5000";
+    const ENDPOINT = "https://prifacy-chatroom-app.herokuapp.com/";
 
     useEffect(() => {
         const { name, room } = queryString.parse(location.search);
@@ -30,10 +30,10 @@ const Chat = ({ location }) => {
         socket.emit("join", { name, room }, () => {});
 
         return () => {
-            socket.emit("disconnect");
+            socket.disconnect();
             socket.off();
         }
-    }, [ENDPOINT, location.search]);
+    }, [location.search, ENDPOINT]);
     
     useEffect(() => {
         socket.on('message', (message) => {

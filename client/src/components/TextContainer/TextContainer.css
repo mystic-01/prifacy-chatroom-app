@@ -1,50 +1,50 @@
 .textContainer {
-    display: flex;
-    flex-direction: column;
-    color: #fff;
-    background: #0772ac;
-    border-right: 2px solid #000;
-    font-family: "Poppins", sans-serif;
-    height: 100vh;
-    padding: 20px 80px 20px 20px;
-  }
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  background: #0772ac;
+  border-right: 2px solid #000;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  padding: 20px 80px 20px 20px;
+}
 
-  .users-heading {
-    margin: 0;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
-    text-shadow: 3px 10px 10px rgba(0, 0, 0, 0.27);
-  }
-  .users-heading::first-letter {
-    font-size: 2.177rem;
-  }
+.textContainer > h1 {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  text-shadow: 3px 10px 10px rgba(0, 0, 0, 0.27);
+}
+.textContainer > h1::first-letter {
+  font-size: 2.177rem;
+}
 
-  .heading-rule {
-    width: 100%;
-  }
-  
-  .activeContainer {
-    display: flex;
-    align-items: center;
-  }
-  
-  .activeItem {
-    display: flex;
-    text-shadow: 3px 10px 10px rgba(0, 0, 0, 0.27);
-    align-items: center;
-  }
-  
-  .activeContainer img {
-    padding-left: 10px;
-  }
+.textContainer > hr {
+  width: 100%;
+  margin-bottom: 20px;
+}
 
-  .onlineIcon {
-    margin-right: 0.377rem;
-  }  
-  
-  @media (min-width: 320px) and (max-width: 1200px) {
-    .textContainer {
-      display: none;
-    }
+.activeContainer {
+  display: flex;
+  align-items: center;
+}
+
+.activeItem {
+  display: flex;
+  text-shadow: 3px 10px 10px rgba(0, 0, 0, 0.27);
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.activeContainer img {
+  padding-left: 10px;
+  margin-right: 0.377rem;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .textContainer {
+    display: none;
   }
+}
